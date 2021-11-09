@@ -30,7 +30,7 @@ form.addEventListener('submit', e => {
 
     console.log(password)
 
-    var pnum = document.getElementById('pnum').value
+    var pnum = document.getElementById('phonenumber').value
 
     console.log(pnum)
 
@@ -67,7 +67,7 @@ const validateInputs = () => {
     const addValue = add.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
-    const pnumValue = pnum.value.trim();
+    const phonenumberValue = phonenumber.value.trim();
     
 
     if(fnameValue === '') {
@@ -104,12 +104,12 @@ const validateInputs = () => {
         setSuccess(password);
     }
 
-    if(pnumValue === '') {
-        setError(pnum, 'Phone number is required');
-    } else if (pnumValue.length < 11 ) {
-        setError(pnum, 'Phone number must be at least 10-11 digits.')
+    if(phonenumberValue === '') {
+        setError(phonenumber, 'Phone number is required');
+    } else if (phonenumberValue.length < 11 ) {
+        setError(phonenumber, 'Phone number must be at least 10-11 digits.')
     } else {
-        setSuccess(pnum);
+        setSuccess(phonenumber);
     }
 
 
